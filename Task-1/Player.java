@@ -1,4 +1,4 @@
-public class Player {
+abstract public class Player {
     // Private data members
     protected String name;
     protected char symbol;
@@ -15,5 +15,5 @@ public class Player {
     public char getSymbol(){
         return symbol;
     }
-    public void getMove(int x, int y){}
+    abstract public int[] getMove(int x, int y);
 }
